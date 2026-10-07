@@ -1,0 +1,100 @@
+{
+  "protocol": "LightGBM binary, mRMR-128, subject-level agg on test@20",
+  "variants": {
+    "full": {
+      "n_features": 614,
+      "train_epoch_acc": 0.6624,
+      "subject_mean": {
+        "n_subjects": 238,
+        "accuracy": 0.6303,
+        "macro_f1": 0.6302,
+        "auc": 0.6834,
+        "baseline": 0.5504
+      },
+      "subject_p90": {
+        "n_subjects": 238,
+        "accuracy": 0.5126,
+        "macro_f1": 0.4573,
+        "auc": 0.6861,
+        "baseline": 0.5504
+      },
+      "seconds": 753.1
+    },
+    "no_event": {
+      "n_features": 532,
+      "train_epoch_acc": 0.6735,
+      "subject_mean": {
+        "n_subjects": 238,
+        "accuracy": 0.6092,
+        "macro_f1": 0.6089,
+        "auc": 0.676,
+        "baseline": 0.5504
+      },
+      "subject_p90": {
+        "n_subjects": 238,
+        "accuracy": 0.5252,
+        "macro_f1": 0.4843,
+        "auc": 0.6751,
+        "baseline": 0.5504
+      },
+      "seconds": 456.0
+    },
+    "A1_no_time": {
+      "n_features": 386,
+      "train_epoch_acc": 0.6757,
+      "subject_mean": {
+        "n_subjects": 238,
+        "accuracy": 0.6218,
+        "macro_f1": 0.6217,
+        "auc": 0.6839,
+        "baseline": 0.5504
+      },
+      "subject_p90": {
+        "n_subjects": 238,
+        "accuracy": 0.5042,
+        "macro_f1": 0.4543,
+        "auc": 0.6922,
+        "baseline": 0.5504
+      },
+      "seconds": 180.1
+    },
+    "A2_no_freq": {
+      "n_features": 462,
+      "train_epoch_acc": 0.6592,
+      "subject_mean": {
+        "n_subjects": 238,
+        "accuracy": 0.5756,
+        "macro_f1": 0.5754,
+        "auc": 0.6328,
+        "baseline": 0.5504
+      },
+      "subject_p90": {
+        "n_subjects": 238,
+        "accuracy": 0.5,
+        "macro_f1": 0.4415,
+        "auc": 0.6449,
+        "baseline": 0.5504
+      },
+      "seconds": 289.8
+    },
+    "A3_no_timefreq": {
+      "n_features": 462,
+      "train_epoch_acc": 0.6657,
+      "subject_mean": {
+        "n_subjects": 238,
+        "accuracy": 0.605,
+        "macro_f1": 0.605,
+        "auc": 0.6805,
+        "baseline": 0.5504
+      },
+      "subject_p90": {
+        "n_subjects": 238,
+        "accuracy": 0.5294,
+        "macro_f1": 0.4927,
+        "auc": 0.6932,
+        "baseline": 0.5504
+      },
+      "seconds": 290.0
+    }
+  }
+}

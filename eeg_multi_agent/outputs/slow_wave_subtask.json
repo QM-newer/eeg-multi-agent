@@ -1,0 +1,17 @@
+{
+  "slow_wave_auc": 0.7519,
+  "slow_wave_acc": 0.7417,
+  "slow_wave_f1": 0.6143,
+  "original_binary_auc": 0.6472,
+  "original_binary_acc": 0.6167,
+  "n_slow_positive": 30,
+  "n_slow_negative": 90,
+  "slow_baseline": 0.75,
+  "n_features": 532,
+  "n_records": 120,
+  "feature_dims": {
+    "time_domain": 228,
+    "freq_domain": 152,
+    "timefreq": 152
+  }
+}

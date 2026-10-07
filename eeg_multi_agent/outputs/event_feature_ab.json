@@ -1,0 +1,22 @@
+{
+  "protocol": "quick ab: 5000 train / 2000 val epochs, 5 epochs/record, LightGBM(128 mRMR)",
+  "dims": {
+    "time_domain": 228,
+    "freq_domain": 152,
+    "timefreq": 152,
+    "event": 82
+  },
+  "with_event": {
+    "acc": 0.6033,
+    "auc": 0.6352
+  },
+  "without_event": {
+    "acc": 0.625,
+    "auc": 0.6555
+  },
+  "delta": {
+    "acc": -0.0217,
+    "auc": -0.0202
+  },
+  "mrmr_event_selected": "54/82"
+}

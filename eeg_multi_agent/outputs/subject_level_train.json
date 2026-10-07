@@ -1,0 +1,84 @@
+{
+  "max_epochs_per_record": 20,
+  "n_features": 361,
+  "results": {
+    "3class_val": {
+      "accuracy": 0.55,
+      "macro_f1": 0.3858,
+      "majority_baseline": 0.5542,
+      "n": 240,
+      "confusion_matrix": [
+        [
+          92,
+          7,
+          34
+        ],
+        [
+          18,
+          0,
+          10
+        ],
+        [
+          33,
+          6,
+          40
+        ]
+      ]
+    },
+    "3class_test": {
+      "accuracy": 0.5504,
+      "macro_f1": 0.3811,
+      "majority_baseline": 0.5504,
+      "n": 238,
+      "confusion_matrix": [
+        [
+          91,
+          5,
+          35
+        ],
+        [
+          15,
+          0,
+          13
+        ],
+        [
+          37,
+          2,
+          40
+        ]
+      ]
+    },
+    "2class_N_vs_A_val": {
+      "accuracy": 0.684,
+      "macro_f1": 0.6612,
+      "majority_baseline": 0.6274,
+      "n": 212,
+      "confusion_matrix": [
+        [
+          100,
+          33
+        ],
+        [
+          34,
+          45
+        ]
+      ]
+    },
+    "2class_N_vs_A_test": {
+      "accuracy": 0.6286,
+      "macro_f1": 0.6043,
+      "majority_baseline": 0.6238,
+      "n": 210,
+      "confusion_matrix": [
+        [
+          92,
+          39
+        ],
+        [
+          39,
+          40
+        ]
+      ]
+    }
+  }
+}

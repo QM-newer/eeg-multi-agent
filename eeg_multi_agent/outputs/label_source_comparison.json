@@ -1,0 +1,69 @@
+{
+  "split": "test",
+  "groups": {
+    "lightgbm": {
+      "project": {
+        "n_subjects": 121,
+        "accuracy": 0.4959,
+        "macro_f1": 0.3666,
+        "baseline": 0.5207,
+        "margin_over_baseline": -0.0248
+      },
+      "raw_index": {
+        "n_subjects": 117,
+        "accuracy": 0.5299,
+        "macro_f1": 0.3703,
+        "baseline": 0.5812,
+        "margin_over_baseline": -0.0513
+      }
+    },
+    "eegnet": {
+      "project": {
+        "n_subjects": 121,
+        "accuracy": 0.5537,
+        "macro_f1": 0.3951,
+        "baseline": 0.5207,
+        "margin_over_baseline": 0.0331
+      },
+      "raw_index": {
+        "n_subjects": 117,
+        "accuracy": 0.5812,
+        "macro_f1": 0.3981,
+        "baseline": 0.5812,
+        "margin_over_baseline": 0.0
+      }
+    },
+    "tcn": {
+      "project": {
+        "n_subjects": 121,
+        "accuracy": 0.4711,
+        "macro_f1": 0.3367,
+        "baseline": 0.5207,
+        "margin_over_baseline": -0.0496
+      },
+      "raw_index": {
+        "n_subjects": 117,
+        "accuracy": 0.4786,
+        "macro_f1": 0.3391,
+        "baseline": 0.5812,
+        "margin_over_baseline": -0.1026
+      }
+    },
+    "transformer": {
+      "project": {
+        "n_subjects": 121,
+        "accuracy": 0.5207,
+        "macro_f1": 0.2283,
+        "baseline": 0.5207,
+        "margin_over_baseline": 0.0
+      },
+      "raw_index": {
+        "n_subjects": 117,
+        "accuracy": 0.5812,
+        "macro_f1": 0.245,
+        "baseline": 0.5812,
+        "margin_over_baseline": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# 模型权重（可通过 training/ 脚本重新生成）
+eeg_multi_agent/checkpoints/
+
+# 患者隐私数据 —— 严禁上传
+*.xlsx
+*.xls
+eeg_multi_agent/data/subject_master.csv
+eeg_multi_agent/data/record_index.csv
+
+# IDE / 系统文件
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store

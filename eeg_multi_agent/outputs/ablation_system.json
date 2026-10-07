@@ -1,0 +1,101 @@
+{
+  "protocol": "3-class full system, test@20, subject=mean epoch prob",
+  "n_epochs": 4760,
+  "n_subjects": 238,
+  "baseline_majority": 0.5504,
+  "mechanism_metrics": {
+    "disagreement_rate": 0.3968,
+    "arbitration_improvement": {
+      "n_disagreement_arbitrated": 1889,
+      "acc_before_arbitration": 0.4357,
+      "acc_after_arbitration": 0.4373
+    }
+  },
+  "variants": {
+    "full": {
+      "epoch_acc": 0.5044,
+      "epoch_macro_f1": 0.3853,
+      "subject_acc": 0.5378,
+      "subject_macro_f1": 0.3815
+    },
+    "A7_no_arbitration": {
+      "epoch_acc": 0.5038,
+      "epoch_macro_f1": 0.3871,
+      "subject_acc": 0.5294,
+      "subject_macro_f1": 0.376
+    },
+    "A8_fixed_weights": {
+      "epoch_acc": 0.5015,
+      "epoch_macro_f1": 0.3856,
+      "subject_acc": 0.542,
+      "subject_macro_f1": 0.3843
+    },
+    "A9_equal_weights": {
+      "epoch_acc": 0.5235,
+      "epoch_macro_f1": 0.3793,
+      "subject_acc": 0.5294,
+      "subject_macro_f1": 0.373
+    }
+  },
+  "mcnemar_vs_full": {
+    "A7_no_arbitration": {
+      "full_correct_variant_wrong": 2,
+      "full_wrong_variant_correct": 0,
+      "p_value": 0.5,
+      "significant_at_0.05": false
+    },
+    "A8_fixed_weights": {
+      "full_correct_variant_wrong": 0,
+      "full_wrong_variant_correct": 1,
+      "p_value": 1.0,
+      "significant_at_0.05": false
+    },
+    "A9_equal_weights": {
+      "full_correct_variant_wrong": 10,
+      "full_wrong_variant_correct": 8,
+      "p_value": 0.8145,
+      "significant_at_0.05": false
+    }
+  },
+  "quality_stratified": {
+    "epoch_level": {
+      "high": {
+        "n_epochs": 4720,
+        "full": 0.5044,
+        "A7_no_arbitration": 0.5038,
+        "A8_fixed_weights": 0.5013,
+        "A9_equal_weights": 0.5233
+      },
+      "medium": {
+        "n_epochs": 22,
+        "full": 0.6364,
+        "A7_no_arbitration": 0.5909,
+        "A8_fixed_weights": 0.6364,
+        "A9_equal_weights": 0.7273
+      },
+      "low": {
+        "n_epochs": 18,
+        "full": 0.3333,
+        "A7_no_arbitration": 0.3889,
+        "A8_fixed_weights": 0.3889,
+        "A9_equal_weights": 0.3333
+      }
+    },
+    "subject_level": {
+      "all_high_quality": {
+        "n_subjects": 215,
+        "full": 0.5349,
+        "A7_no_arbitration": 0.5256,
+        "A8_fixed_weights": 0.5395,
+        "A9_equal_weights": 0.5209
+      },
+      "contains_medium_low": {
+        "n_subjects": 23,
+        "full": 0.5652,
+        "A7_no_arbitration": 0.5652,
+        "A8_fixed_weights": 0.5652,
+        "A9_equal_weights": 0.6087
+      }
+    }
+  }
+}

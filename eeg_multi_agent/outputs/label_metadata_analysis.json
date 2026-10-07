@@ -1,0 +1,163 @@
+{
+  "n_records": 1830,
+  "n_matched": 837,
+  "coverage_by_split": {
+    "test": {
+      "记录数": 249.0,
+      "有病例字段": 128.0,
+      "覆盖率%": 51.4
+    },
+    "train": {
+      "记录数": 1152.0,
+      "有病例字段": 589.0,
+      "覆盖率%": 51.1
+    },
+    "val": {
+      "记录数": 245.0,
+      "有病例字段": 120.0,
+      "覆盖率%": 49.0
+    }
+  },
+  "age_by_label": {
+    "Abnormal": {
+      "count": 305.0,
+      "mean": 5.54,
+      "std": 3.72,
+      "min": 0.0,
+      "50%": 5.0,
+      "max": 28.0
+    },
+    "Borderline": {
+      "count": 84.0,
+      "mean": 5.8,
+      "std": 3.83,
+      "min": 0.17,
+      "50%": 5.0,
+      "max": 16.0
+    },
+    "Normal": {
+      "count": 445.0,
+      "mean": 6.48,
+      "std": 4.24,
+      "min": 0.08,
+      "50%": 6.0,
+      "max": 26.0
+    }
+  },
+  "wave_vs_label": {
+    "slow_wave": {
+      "pos_rate_by_label": {
+        "Abnormal": 97.4,
+        "Borderline": 72.6,
+        "Normal": 2.0
+      },
+      "counts": {
+        "阴性": {
+          "Abnormal": 8,
+          "Borderline": 23,
+          "Normal": 437
+        },
+        "阳性": {
+          "Abnormal": 299,
+          "Borderline": 61,
+          "Normal": 9
+        }
+      }
+    },
+    "sharp_wave": {
+      "pos_rate_by_label": {
+        "Abnormal": 32.9,
+        "Borderline": 25.0,
+        "Normal": 0.9
+      },
+      "counts": {
+        "阴性": {
+          "Abnormal": 206,
+          "Borderline": 63,
+          "Normal": 442
+        },
+        "阳性": {
+          "Abnormal": 101,
+          "Borderline": 21,
+          "Normal": 4
+        }
+      }
+    },
+    "spike_wave": {
+      "pos_rate_by_label": {
+        "Abnormal": 73.9,
+        "Borderline": 64.3,
+        "Normal": 0.9
+      },
+      "counts": {
+        "阴性": {
+          "Abnormal": 80,
+          "Borderline": 30,
+          "Normal": 442
+        },
+        "阳性": {
+          "Abnormal": 227,
+          "Borderline": 54,
+          "Normal": 4
+        }
+      }
+    },
+    "epileptiform_count": {
+      "pos_rate_by_label": {
+        "Abnormal": 98.7,
+        "Borderline": 95.2,
+        "Normal": 2.2
+      },
+      "counts": {
+        "阴性": {
+          "Abnormal": 4,
+          "Borderline": 4,
+          "Normal": 436
+        },
+        "阳性": {
+          "Abnormal": 303,
+          "Borderline": 80,
+          "Normal": 10
+        }
+      }
+    },
+    "region_count": {
+      "pos_rate_by_label": {
+        "Abnormal": 99.7,
+        "Borderline": 100.0,
+        "Normal": 2.2
+      },
+      "counts": {
+        "阴性": {
+          "Abnormal": 1,
+          "Borderline": 0,
+          "Normal": 436
+        },
+        "阳性": {
+          "Abnormal": 306,
+          "Borderline": 84,
+          "Normal": 10
+        }
+      }
+    },
+    "generalized": {
+      "pos_rate_by_label": {
+        "Abnormal": 58.3,
+        "Borderline": 54.8,
+        "Normal": 1.1
+      },
+      "counts": {
+        "阴性": {
+          "Abnormal": 128,
+          "Borderline": 38,
+          "Normal": 441
+        },
+        "阳性": {
+          "Abnormal": 179,
+          "Borderline": 46,
+          "Normal": 5
+        }
+      }
+    }
+  }
+}

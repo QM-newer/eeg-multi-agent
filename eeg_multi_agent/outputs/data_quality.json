@@ -1,0 +1,111 @@
+{
+  "cache_dir": "E:/eeg_asd_cache/epochs",
+  "n_records": 1597,
+  "n_channels": 19,
+  "n_times": 500,
+  "sfreq": 250.0,
+  "train": {
+    "n_records": 1119,
+    "n_subjects": 1119,
+    "n_epochs": 111804,
+    "epochs_by_class": {
+      "Normal": 61804,
+      "Abnormal": 37000,
+      "Borderline": 13000
+    },
+    "records_by_class": {
+      "Normal": 619,
+      "Abnormal": 370,
+      "Borderline": 130
+    }
+  },
+  "val": {
+    "n_records": 240,
+    "n_subjects": 240,
+    "n_epochs": 23923,
+    "epochs_by_class": {
+      "Abnormal": 7823,
+      "Normal": 13300,
+      "Borderline": 2800
+    },
+    "records_by_class": {
+      "Abnormal": 79,
+      "Normal": 133,
+      "Borderline": 28
+    }
+  },
+  "test": {
+    "n_records": 238,
+    "n_subjects": 238,
+    "n_epochs": 23774,
+    "epochs_by_class": {
+      "Normal": 13100,
+      "Abnormal": 7874,
+      "Borderline": 2800
+    },
+    "records_by_class": {
+      "Normal": 131,
+      "Abnormal": 79,
+      "Borderline": 28
+    }
+  },
+  "snr_db": {
+    "mean": 18.334,
+    "median": 18.32,
+    "p10": 15.128,
+    "p90": 21.49,
+    "min": 9.72,
+    "max": 29.54
+  },
+  "artifact_ratio": {
+    "mean": 0.027,
+    "median": 0.017,
+    "p10": 0.002,
+    "p90": 0.065,
+    "min": 0.0,
+    "max": 0.294
+  },
+  "keep_rate": {
+    "mean": 0.889,
+    "median": 0.912,
+    "p10": 0.788,
+    "p90": 0.985,
+    "min": 0.012,
+    "max": 1.0
+  },
+  "n_epochs": {
+    "mean": 99.875,
+    "median": 100.0,
+    "p10": 100.0,
+    "p90": 100.0,
+    "min": 7.0,
+    "max": 100.0
+  },
+  "amplitude": {
+    "epoch_std_uV": {
+      "mean": 43.235,
+      "median": 36.08,
+      "p10": 24.099,
+      "p90": 69.793,
+      "min": 13.837,
+      "max": 137.256
+    },
+    "epoch_ptp_uV": {
+      "mean": 933.264,
+      "median": 683.348,
+      "p10": 353.105,
+      "p90": 1686.732,
+      "min": 165.055,
+      "max": 4872.893
+    },
+    "records_with_flat_channel": 0,
+    "sampled_records": 150
+  },
+  "band_power_percent": {
+    "delta0.5-4": 39.03,
+    "theta4-8": 15.6,
+    "alpha8-13": 11.56,
+    "beta13-30": 21.93,
+    "gamma30-45": 11.66
+  }
+}

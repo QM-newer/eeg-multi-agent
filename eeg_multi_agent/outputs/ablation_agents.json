@@ -1,0 +1,129 @@
+{
+  "protocol": "subject-level binary, meta=LGBM on val, agg=p90, test@20",
+  "n_test_subjects": 238,
+  "baseline_majority": 0.5504,
+  "bases": {
+    "lightgbm": {
+      "agents": [
+        "lightgbm",
+        "eegnet",
+        "tcn",
+        "transformer"
+      ],
+      "variants": {
+        "stacking_full": {
+          "acc": 0.5798,
+          "macro_f1": 0.5711,
+          "auc": 0.6339
+        },
+        "A4_no_eegnet": {
+          "acc": 0.6092,
+          "macro_f1": 0.5985,
+          "auc": 0.6682
+        },
+        "A5_no_tcn": {
+          "acc": 0.5546,
+          "macro_f1": 0.5521,
+          "auc": 0.6116
+        },
+        "A6_no_transformer": {
+          "acc": 0.5966,
+          "macro_f1": 0.591,
+          "auc": 0.6551
+        },
+        "A9_soft_voting_equal": {
+          "acc": 0.5168,
+          "macro_f1": 0.4635,
+          "auc": 0.6855
+        },
+        "hard_voting": {
+          "acc": 0.5336,
+          "macro_f1": 0.496,
+          "auc": null,
+          "note": "4 agents majority vote, tie→Normal"
+        },
+        "single_lightgbm": {
+          "acc": 0.5294,
+          "macro_f1": 0.4876,
+          "auc": 0.681
+        },
+        "single_eegnet": {
+          "acc": 0.5462,
+          "macro_f1": 0.5216,
+          "auc": 0.6826
+        },
+        "single_tcn": {
+          "acc": 0.5168,
+          "macro_f1": 0.4852,
+          "auc": 0.657
+        },
+        "single_transformer": {
+          "acc": 0.4748,
+          "macro_f1": 0.3801,
+          "auc": 0.6185
+        }
+      }
+    },
+    "lightgbm_event": {
+      "agents": [
+        "lightgbm_event",
+        "eegnet",
+        "tcn",
+        "transformer"
+      ],
+      "variants": {
+        "stacking_full": {
+          "acc": 0.605,
+          "macro_f1": 0.5968,
+          "auc": 0.6541
+        },
+        "A4_no_eegnet": {
+          "acc": 0.5966,
+          "macro_f1": 0.5901,
+          "auc": 0.6583
+        },
+        "A5_no_tcn": {
+          "acc": 0.5504,
+          "macro_f1": 0.5462,
+          "auc": 0.6059
+        },
+        "A6_no_transformer": {
+          "acc": 0.6134,
+          "macro_f1": 0.6107,
+          "auc": 0.6458
+        },
+        "A9_soft_voting_equal": {
+          "acc": 0.5168,
+          "macro_f1": 0.4603,
+          "auc": 0.6864
+        },
+        "hard_voting": {
+          "acc": 0.5336,
+          "macro_f1": 0.4908,
+          "auc": null,
+          "note": "4 agents majority vote, tie→Normal"
+        },
+        "single_lightgbm_event": {
+          "acc": 0.5126,
+          "macro_f1": 0.4573,
+          "auc": 0.6861
+        },
+        "single_eegnet": {
+          "acc": 0.5462,
+          "macro_f1": 0.5216,
+          "auc": 0.6826
+        },
+        "single_tcn": {
+          "acc": 0.5168,
+          "macro_f1": 0.4852,
+          "auc": 0.657
+        },
+        "single_transformer": {
+          "acc": 0.4748,
+          "macro_f1": 0.3801,
+          "auc": 0.6185
+        }
+      }
+    }
+  }
+}
