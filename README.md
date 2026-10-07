@@ -60,7 +60,6 @@ flowchart TB
 Agent/
 ├── README.md                        # 本文件
 ├── EEG-Multi-Agent System Plan.docx # 系统设计文档
-├── 项目进展报告.md                   # 详细实验记录与结论
 └── eeg_multi_agent/                 # 代码主目录
     ├── config.py                    # 全局配置（含校准后的 DISAGREEMENT_CONFIG）
     ├── agents/
@@ -210,8 +209,6 @@ DISAGREEMENT_CONFIG = {
 2. **取样窗口以记录开头最好**（skip 60s 的 AUC 0.726，优于 15/30/60 min），现有策略合适
 3. **Borderline 类基本学不到**（F1 ≈ 0.04）：仅占 11.6% 且临床定义模糊，属预期；建议论文单列或合并为"可疑"档
 4. **融合未超最优单 Agent**：弱模型在逐片段投票中稀释强模型，被试级融合（0.5672）仍低于 LightGBM（0.5966）
-
-详细实验记录与结论见[项目进展报告.md](项目进展报告.md)。
 
 ## 数据隐私声明
 
